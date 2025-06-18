@@ -1,0 +1,343 @@
+{
+  "locations": [
+  {
+    "id": 1,
+    "name": "Dorm Room",
+    "brief_description": "Your dorm room, where the game begins.",
+    "long_description": "Your small but familiar dorm room. Your desk is cluttered with papers and empty coffee cups. Your laptop is here, but your USB drive, charger, and lucky mug are missing.",
+    "available_commands": {
+      "open door": 2
+    },
+    "items": [],
+    "enemies": [],
+    "possible_commands": {
+
+    }
+  },
+  {
+    "id": 2,
+    "name": "Hallway",
+    "brief_description": "A quiet hallway with doors leading to other dorm rooms.",
+    "long_description": "A narrow, dimly lit hallway lined with dorm room doors. The elevator and stairs are nearby, offering ways to explore the campus.",
+    "available_commands": {
+      "enter room": 1,
+      "take elevator": 3,
+      "take stairs": 4
+    },
+    "items": ["sticky note"],
+    "enemies": [],
+    "possible_commands": {
+
+    }
+  },
+  {
+    "id": 3,
+    "name": "Elevator",
+    "brief_description": "An old elevator that takes you to different floors.",
+    "long_description": "A slightly creaky elevator with flickering lights. It can take you to the ground floor, the library or to your dorm floor.",
+    "available_commands": {
+      "exit": 2,
+      "descend to basement": 5,
+      "descend to library": 6
+    },
+    "items": [],
+    "enemies": [],
+    "possible_commands": {
+
+    }
+  },
+  {
+    "id": 4,
+    "name": "Stairs",
+    "brief_description": "A set of stairs leading to different floors.",
+    "long_description": "A long staircase with worn-out steps. It connects to your dorm floor, the ground floor, and the library.",
+    "available_commands": {
+      "go outside": 7,
+      "descend to library": 6,
+      "return to hallway": 2
+    },
+    "items": ["healthy muffin poster"],
+    "enemies": [],
+    "possible_commands": {
+
+    }
+  },
+  {
+    "id": 5,
+    "name": "Basement",
+    "brief_description": "A dark basement full of forgotten boxes, books and secrets.",
+    "long_description": "Dusty piles of boxes tower around you, and there's an eerie silence that makes you uneasy. It seems like the elevators are the only way out of here. You can also see the janitors closet, but it's locked.",
+    "available_commands": {
+      "take elevator": 3
+    },
+    "items": [],
+    "enemies": [],
+    "possible_commands": {
+      "go in janitor's closet": 8
+    }
+  },
+  {
+    "id": 6,
+    "name": "Library",
+    "brief_description": "The main hall of the library, filled with students studying.",
+    "long_description": "A vast library with shelves of books and students working. You can see the elevator and stairs from here, but there is also a locked door labeled 'Archive Room'.",
+    "available_commands": {
+      "take elevator": 3,
+      "take stairs": 4
+    },
+    "items": ["laptop charger"],
+    "enemies": ["grumpy librarian"],
+    "possible_commands": {
+      "enter archive room": 9
+    }
+  },
+  {
+    "id": 7,
+    "name": "Outside",
+    "brief_description": "The campus grounds outside your dorm.",
+    "long_description": "A lively campus with students walking around. You can see your dorm room, a coffee shop, and the CS building nearby.",
+    "available_commands": {
+      "take stairs": 4,
+      "walk to coffee shop": 10,
+      "run to cs building": 11
+    },
+    "items": ["paperclip"],
+    "enemies": [],
+    "possible_commands": {
+
+    }
+  },
+  {
+    "id": 8,
+    "name": "Janitor’s Closet",
+    "brief_description": "A cluttered space with cleaning supplies and forgotten items.",
+    "long_description": "Barely enough space to move, but sometimes useful items are hidden here. The only door leads back out into the basement",
+    "available_commands": {
+      "exit to basement": 5
+    },
+    "items": ["crowbar"],
+    "enemies": [],
+    "possible_commands": {
+
+    }
+  },
+  {
+    "id": 9,
+    "name": "Archive Room",
+    "brief_description": "A restricted section of the library containing old research papers.",
+    "long_description": "Dimly lit and rarely visited, this room holds valuable information, however the only entrance is through the library door which is often under lock and key.",
+    "available_commands": {
+      "ascend to library": 6
+    },
+    "items": [],
+    "enemies": ["haunting grad student"],
+    "possible_commands": {
+
+    }
+  },
+  {
+    "id": 10,
+    "name": "Coffee Shop",
+    "brief_description": "A quiet coffee shop with a few students working.",
+    "long_description": "A cozy coffee shop with the smell of fresh coffee in the air. A few students are studying here. You can see the scenic campus outsidde the windows.",
+    "available_commands": {
+      "go outside": 7
+    },
+    "items": ["healthy muffin"],
+    "enemies": ["sleep-deprived student"],
+    "possible_commands": {
+
+    }
+  },
+  {
+    "id": 11,
+    "name": "CS Building",
+    "brief_description": "The main hub for all computer science students.",
+    "long_description": "A modern building filled with classrooms, proffesors offices, and stressed students frantically coding. There's a door connecting to the main campus, but you can see many wires leading to a small door locked by a key fob.",
+    "available_commands": {
+      "enter classroom": 14,
+      "enter proffessors office": 13,
+      "go outside": 7
+    },
+    "items": [],
+    "enemies": [],
+    "possible_commands": {
+      "enter server room": 12
+    }
+  },
+  {
+    "id": 12,
+    "name": "Server Room",
+    "brief_description": "A heavily secured room filled with powerful machines.",
+    "long_description": "Blazing hot from the running servers, this room contains vital university data. Security is tight. There's a door leading to the main room of the CS building.",
+    "available_commands": {
+      "exit to cs building": 11
+    },
+    "items": [],
+    "enemies": ["security bot"],
+    "possible_commands": {
+
+    }
+  },
+  {
+    "id": 13,
+    "name": "Professor’s Office",
+    "brief_description": "The final submission room of your professor's office.",
+    "long_description": "Your professor's office. This is where you'll have to find submit your final project. Do you have all the items you need?",
+    "available_commands": {
+      "exit to cs building": 11,
+      "hand in assignment": 13
+    },
+    "items": [],
+    "enemies": [],
+    "possible_commands": {
+
+    }
+  },
+  {
+    "id": 14,
+    "name": "Classroom",
+    "brief_description": "A classroom where lectures on algorithms are held.",
+    "long_description": "The whiteboard is filled with complex equations. A few students are still working here after class. There is a door leading to the main room of the CS building",
+    "available_commands": {
+      "exit to cs building": 11
+    },
+    "items": [],
+    "enemies": ["angry ta"],
+    "possible_commands": {
+
+    }
+  }
+],
+
+  "items": [
+  {
+    "name": "usb drive",
+    "description": "The only copy of your game project. Without this, you can't submit!",
+    "target_position": -1,
+    "target_points": 10,
+    "use_effect": ["", -1]
+  },
+  {
+    "name": "laptop charger",
+    "description": "Your laptop battery is dead. You need this to power it back up!",
+    "target_position": -1,
+    "target_points": 5,
+    "use_effect": ["", -1]
+  },
+  {
+    "name": "lucky uoft mug",
+    "description": "Your trusted mug that has been with you through every late-night study session.",
+    "target_position": -1,
+    "target_points": 5,
+    "use_effect": ["", -1]
+  },
+  {
+    "name": "sticky note",
+    "description": "A note mentioning the janitors closet in the basement, you might be able to pick the lock.",
+    "target_position": -1,
+    "target_points": 1,
+    "use_effect": ["", -1]
+  },
+  {
+    "name": "paperclip",
+    "description": "A red paperclip. Doesn't seem very usefull but it's easily bent.",
+    "target_position": 5,
+    "target_points": 1,
+    "use_effect": ["go in janitor's closet", 8]
+  },
+  {
+    "name": "acces fob",
+    "description": "An acces fob. It seems like it gives acces to important rooms.",
+    "target_position": 11,
+    "target_points": 3,
+    "use_effect": ["enter server room", 12]
+  },
+  {
+    "name": "healthy muffin",
+    "description": "Someone left their breakfast here. Maybe it'll give you energy?",
+    "target_position": 10,
+    "target_points": 5,
+    "use_effect": ["", -1]
+  },
+  {
+    "name": "archive key",
+    "description": "An ancient looking key, it's for the archive room.",
+    "target_position": 6,
+    "target_points": 4,
+    "use_effect": ["enter archive room", 9]
+  },
+  {
+    "name": "crowbar",
+    "description": "A sturdy tool that might break open a locked door.",
+    "target_position": 11,
+    "target_points": 3,
+    "use_effect": ["enter server room", 12]
+  },
+  {
+    "name": "healthy muffin poster",
+    "description": "A poster advertising the healthy muffins at the coffee shop.",
+    "target_position": -1,
+    "target_points": 2,
+    "use_effect": ["", -1]
+  }
+],
+
+  "player": {
+    "items": [],
+    "health": 30,
+    "base_health": 25,
+    "health_additions": 5,
+    "levels": 1,
+    "attack": 3
+  },
+
+  "enemies": [
+  {
+    "name": "haunting grad student",
+    "description": "A ghostly figure that haunts the library’s archives, whispering forgotten knowledge.",
+    "lines": ["You shall not pass!", "Your knowledge is weak!", "Feel the wrath of the archives!"],
+    "items": ["lucky uoft mug"],
+    "health": 80,
+    "levels": 4,
+    "attack": 10
+  },
+  {
+    "name": "sleep-deprived student",
+    "description": "A wild-eyed student fueled by caffeine and despair, protecting their research at all costs.",
+    "lines": ["I've got 2 hours to submit this!", "Go away, I’m working!", "I haven’t slept in 3 days!"],
+    "items": [],
+    "health": 30,
+    "levels": 3,
+    "attack": 6
+  },
+  {
+    "name": "grumpy librarian",
+    "description": "A librarian who has had enough of noisy students and late book returns.",
+    "lines": ["Return your books on time!", "This isn’t a social club!", "Respect the library rules!"],
+    "items": ["archive key"],
+    "health": 20,
+    "levels": 2,
+    "attack": 2
+  },
+  {
+    "name": "angry ta",
+    "description": "A teaching assistant who has graded one too many bad assignments.",
+    "lines": ["This is incorrect!", "Did you even read the rubric?", "Resubmit for half credit."],
+    "items": ["acces fob"],
+    "health": 50,
+    "levels": 3,
+    "attack": 7
+  },
+  {
+    "name": "security bot",
+    "description": "A campus security robot programmed to protect the server room.",
+    "lines": ["Unauthorized access detected.", "Leave now or be removed.", "Initiating lockdown."],
+    "items": ["usb drive"],
+    "health": 120,
+    "levels": 5,
+    "attack": 15
+  }
+]
+
+}
